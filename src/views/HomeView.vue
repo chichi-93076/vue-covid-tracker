@@ -56,7 +56,7 @@ export default {
     async clearCountryData() {
       this.loading = true
       const data = await this.fetchCovidData()
-      this.title = 'Golbal'
+      this.title = 'Global'
       this.stats = data.Global
       this.loading = false
     },
@@ -69,7 +69,7 @@ export default {
     this.countries = data.Countries
     this.loading = false
 
-    //console.log(data);
+    console.log(data);
   },
 }
 </script>
